@@ -9,12 +9,12 @@ export default new Router({
   routes: [
     {
       path: '/tasks',
-      name: 'TaskList',
+      name: 'tasks',
       component: TaskList
     },
     {
       path: '/tasks/:id',
-      name: 'TaskDetail',
+      name: 'task',
       component: Task
     }
   ]

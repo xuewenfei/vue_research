@@ -3,9 +3,7 @@
     <p>列表页面</p>
     <ul>
       <li v-for="task in tasks">
-        <a :href="task.url" >
-          {{task.name}}
-        </a>
+        <router-link :to="{name: 'task', params: {id: task.id}}">{{task.name}}</router-link>
       </li>
     </ul>
   </div>
@@ -19,12 +17,10 @@ export default {
       [
         {
           id: 1,
-          url: '/#tasks/1',
           name: 'task1'
         },
         {
           id: 2,
-          url: '/#tasks/1',
           name: 'task2' }
       ]
     }
