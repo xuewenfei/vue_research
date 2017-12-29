@@ -24,6 +24,23 @@ export default {
           name: 'task2' }
       ]
     }
+  },
+  methods: {
+  },
+  beforeCreate () {
+    console.log('List beforeCreate')
+  },
+  created () {
+    console.log('List created')
+  },
+  mounted () {
+    console.log('List mounted')
+  },
+  beforeDestroy () {
+    console.log('List beforeDestroy')
+  },
+  destroyed () {
+    console.log('List destroyed')
   }
 
 }
