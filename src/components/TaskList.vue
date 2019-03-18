@@ -33,8 +33,17 @@ export default {
   created () {
     console.log('List created')
   },
+  beforeMount () {
+    console.log('List beforeMounted')
+  },
   mounted () {
     console.log('List mounted')
+  },
+  beforeUpdate () {
+    console.log('List beforeUpdate')
+  },
+  updated () {
+    console.log('List updated')
   },
   beforeDestroy () {
     console.log('List beforeDestroy')

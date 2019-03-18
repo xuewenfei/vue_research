@@ -36,9 +36,21 @@ Task.vue?5828:32 beforeRouteEntercallback
 
 
 #open task2,
-nothing
+Detail 2 beforeUpdate
+Task.vue?e53e:30 Detail 2 updated
 #history back
-nothing
+Detail 1 beforeUpdate
+Task.vue?e53e:30 Detail 1 updated
+
+#总结
+如果下一次的路由和上一次的路由使用的组件是相同的话，
+因为缓存的原因，不会执行creted的回调， 也不行行mounted回调
+只执行update相关的回调
+
+这样的话， 如果只是在created回调中fetch api data的话， 如果从
+task1，直接跳转到task2，只能看到task1的内容，没有触发新的api调用
+
+
 
 
 

@@ -17,8 +17,17 @@ export default {
   created () {
     console.log(`Detail ${this.$route.params.id} created`)
   },
+  beforeMount () {
+    console.log(`Detail ${this.$route.params.id} beforeMounted`)
+  },
   mounted () {
     console.log(`Detail ${this.$route.params.id} mounted`)
+  },
+  beforeUpdate () {
+    console.log(`Detail ${this.$route.params.id} beforeUpdate`)
+  },
+  updated () {
+    console.log(`Detail ${this.$route.params.id} updated`)
   },
   beforeDestroy () {
     console.log(`Detail ${this.$route.params.id} beforeDestroy`)
